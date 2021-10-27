@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.default-btn {
+  border-radius: 5px;
+  background-color: #036865;
+  border-color: #036865;
+  border-style: none;
+  padding: 10px 10px;
+  color: White;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.default-btn.disabled{
+  background-color: #878a89;
+} 
+.search-icon{
+  color: #878a89;
+}
+.search-input{
+  max-width: 300px !important;
+}
+.search-container{
+  display: flex;
+  justify-content: end;
+}
+input[type=text]{
+  padding: 10px 15px;
+  border-color: #cbced0;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 16px;
+  position: relative;
+  max-width: 95%;
+  min-width: 220px;
+}
+input[type=text]:focus{
+  outline: none;
+}
+.tag {
+  background-color: #3e70ae;
+  color: #fff;
+  border-radius: 10px;
+  margin: 5px;
+  display: inline-block;
+  padding: 5px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.tag svg {
+  right: -5px;
+  position: relative;
+  top: 8px;
+  cursor: pointer;
+}
+.item{
+  background-color: #e8e8e8;
+  border-radius: 7px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+.item .value{
+  color: #878a89;
+  display: block;
+  margin-top: 10px;
+}
+.item-info .name{
+  margin-bottom: 10px;
+}
+.item-info{
+  width: 35%;
+  padding: 0px 10px;
+  text-align: left;
+}
+.item-tags{
+  width: 35%;
+  padding: 0px 10px;
+  text-align: end;
+}
+.item-input{
+  width: 20%;
+  padding: 0px 10px;
+}
+.item-add-btn{
+  width: 10%;
+  padding: 0px 10px;
+}
+
+.container{
+  padding: 100px 100px;
+}
+@media only screen and (max-width: 600px){
+  .item-info,.item-tags,.item-input,.item-add-btn {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .item {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .container{
+    padding: 20px 20px;
+  }
+  .search-container{
+    justify-content: center;
+  }
+}
